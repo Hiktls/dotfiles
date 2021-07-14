@@ -1,0 +1,9 @@
+#!/bin/sh
+echo off
+$HOME/.xprofile & 
+# Switch to another resolution
+xrandr --output Virtual1 --mode 1024x768 &
+# Set back to default
+xrandr --output Virtual1 --mode 1920x1080_60.00 &
+# Set background
+feh --bg-scale $HOME/Wallpapers/wallpaper.jpg
